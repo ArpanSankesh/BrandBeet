@@ -1,10 +1,66 @@
+@font-face {
+    font-family: "font";
+    src: url(fonts/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+    font-family: "font";
 }
 
 body{
     width: 100%;
     height: 100%;
 }
+
+#main{
+    width: 100%;
+    min-height:100vh ;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main-nav{
+    width: 100%;
+    height: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+
+.nav-left{
+    font-size: 1.5vw;
+    height: 4vh;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.nav-left h1{
+    transition: all  cubic-bezier(0.19, 1, 0.22, 1).7s;
+}
+
+.nav-left:hover h1:nth-child(1){
+    margin-top: -3.8vh;
+}
+
+.nav-right{
+    font-size: 1vw;
+    height: 2.8vh;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.nav-right h1{
+    transition: all  cubic-bezier(0.19, 1, 0.22, 1).7s;
+}
+
+.nav-right:hover h1:nth-child(1){
+    margin-top: -2.8vh;
+}
+
