@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing:border-box;
     font-family: "font";
+    font-weight: 400;
 }
 
 body{
@@ -22,52 +23,58 @@ body{
 
 .main-nav{
     width: 100%;
-    height: 12vw;
+    height: 9vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5vw;
+    padding: 0 2vw;
     position: fixed;
+    mix-blend-mode: difference;
+    z-index: 999;
 }
 
 .nav-left{
-    font-size: 1.2vw;
-    height: 4vh;
+    font-size: 1vw;
+    height: 3vh;
     overflow: hidden;
     cursor: pointer;
 }
 
 .nav-left h1{
     transition: all  cubic-bezier(0.19, 1, 0.22, 1).7s;
+    color: #fff;
 }
 
 .nav-left:hover h1:nth-child(1){
-    margin-top: -3.8vh;
+    margin-top: -3vh;
 }
 
 .nav-right{
-    font-size: 0.8vw;
-    height: 2.8vh;
+    font-size: 0.6vw;
+    height: 2.2vh;
     overflow: hidden;
     cursor: pointer;
 }
 
 .nav-right h1{
     transition: all  cubic-bezier(0.19, 1, 0.22, 1).7s;
+    color: #fff;
+    font-weight: 200;
 }
 
 .nav-right:hover h1:nth-child(1){
-    margin-top: -2.8vh;
+    margin-top: -2.2vh;
 }
 
 .section-1{
     width: 100%;
     min-height: 100vh;
+    background-color: #000;
 }
 
 .main-content{
     width: 100%;
-    height: 200vh;
+    min-height:100%;
     display: flex;
     align-items:start;
     justify-content: center;
@@ -75,25 +82,41 @@ body{
 
 .rotate-container{
     background-color: #000;
-    width: 200vw;
+    width: 210vw;
     height: 200vh;
     display: flex;
-    align-items:center;
+    align-items:start;
     justify-content: center;
-    gap: 2.5vw;
+    gap: 2vw;
+    scale: 1;
 }
 
 .rows{
     display: flex;
     flex-direction: column;
-    gap: 2.5vw;
-    width: calc(200vw/5);
+    gap: 2vw;
+    width: calc(210vw/5);
     height: 100%;
 }
+
+.rotate-container .rows:nth-child(2){
+    margin-top: -2vw ;
+}
+.rotate-container .rows:nth-child(3){
+    margin-top: -8vw ;
+}
+.rotate-container .rows:nth-child(4){
+    margin-top: -14vw ;
+}
+.rotate-container .rows:nth-child(5){
+    margin-top: -20vw ;
+}
+
 .image{
     width: 100%;
     height: calc(120vw/4);
     overflow: hidden;
+    border-radius: 0.4vw;
 }
 
 .image img{
