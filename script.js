@@ -16,33 +16,32 @@ var tl =  gsap.timeline({scrollTrigger:{
     start:"25% 50%",
     end:"150% 50%",
     scrub:true,
-    markers:true,
     pin:true
 }});
 
 tl.to('.rotate-container',{
-    rotate:-20,
+    rotate:-17,
     scale:0.8
 },'animate')
 
 tl.to('.row1',{
     // marginTop: "-30vw"
-    marginTop: "-30vw"
+    marginTop: "-22vw"
 },'animate')
 
 tl.to('.row2',{
     // marginTop: "-50vw"
-    marginTop: "-30vw"
+    marginTop: "-22vw"
 },'animate')
 
 tl.to('.row3',{
     // marginTop: "-70vw"
-    marginTop: "-50vw"
+    marginTop: "-40vw"
 },'animate')
 
 tl.to('.row4',{
     // marginTop: "-80vw"
-    marginTop: "-65vw"
+    marginTop: "-56vw"
 },'animate')
 
 tl.to('.overlay',{
@@ -51,5 +50,7 @@ tl.to('.overlay',{
 },'animate')
 
 tl.to('.overlay h1',{
+    duration:0.1,
+    delay:0.05,
     opacity:1
 },'animate')
