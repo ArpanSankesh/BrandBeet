@@ -152,16 +152,18 @@ body{
     flex-direction: column;
     bottom: 8%;
     color: #fff;
-    gap: 0.5vw;
+    gap: 0.4vw;
 }
 
 .scroll-down-div h3{
-    font-size: 0.8vw;
+    font-size: 0.7vw;
+    text-transform: uppercase;
+    letter-spacing: 0.05vw;
 
 }
 
 .scroll-parent{
-    width:4.5vw;
+    width:5.8vw;
     height: 0.2vw;
     background-color: #ffffff6d;
     border-radius: 50px;
