@@ -22,7 +22,8 @@ var tl =  gsap.timeline({scrollTrigger:{
 
 tl.to('.rotate-container',{
     rotate:-15,
-    scale:0.8
+    scale:0.8,
+    delay:0.03
 },'animate')
 
 tl.to('.row1',{
@@ -54,4 +55,8 @@ tl.to('.overlay h1',{
     duration:0.1,
     delay:0.05,
     opacity:1
+},'animate')
+
+tl.to('.scrolling',{
+    width:"100%"
 },'animate')
