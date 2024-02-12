@@ -16,8 +16,7 @@ var tl =  gsap.timeline({scrollTrigger:{
     start:"25% 50%",
     end:"200% 50%",
     scrub:true,
-    pin:true,
-    markers:true
+    pin:true
 }});
 
 tl.to('.rotate-container',{
