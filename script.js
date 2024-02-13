@@ -13,16 +13,17 @@ requestAnimationFrame(raf)
 
 var tl =  gsap.timeline({scrollTrigger:{
     trigger:".section-1",
-    start:"25% 50%",
+    start:"50%% 50%",
     end:"200% 50%",
     scrub:true,
-    pin:true
+    pin:true,
+    markers:true
 }});
 
 tl.to('.rotate-container',{
     rotate:-15,
     scale:0.8,
-    delay:0.03
+    delay:0.03,
 },'animate')
 
 tl.to('.row1',{
