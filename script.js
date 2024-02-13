@@ -16,8 +16,7 @@ var tl =  gsap.timeline({scrollTrigger:{
     start:"50%% 50%",
     end:"200% 50%",
     scrub:true,
-    pin:true,
-    markers:true
+    pin:true
 }});
 
 tl.to('.rotate-container',{
@@ -60,3 +59,16 @@ tl.to('.overlay h1',{
 tl.to('.scrolling',{
     width:"100%"
 },'animate')
+
+var tl2 =  gsap.timeline({scrollTrigger:{
+    trigger:".section-2",
+    start:"0% 50%",
+    end:"50% 50%",
+    scrub:true,
+    markers:true
+}});
+
+tl2.to('.curve-container',{
+    height:0,
+    marginTop:0
+})
