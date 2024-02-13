@@ -80,6 +80,7 @@ body{
     display: flex;
     align-items:start;
     justify-content: center;
+    overflow: hidden;
 }
 
 .rotate-container{
@@ -90,7 +91,7 @@ body{
     align-items:start;
     justify-content: center;
     gap: 2vw;
-    scale: 1
+    scale: 1;
 }
 
 .rows{
@@ -99,6 +100,7 @@ body{
     gap: 2vw;
     width: calc(210vw/5);
     height: 100%;
+    overflow: hidden;
 }
 
 .rotate-container .rows:nth-child(2){
@@ -116,7 +118,7 @@ body{
 
 .image{
     width: 100%;
-    height: calc(120vw/4);
+    height: calc(100%/4);
     overflow: hidden;
     border-radius: 0.4vw;
 }
