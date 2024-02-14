@@ -182,7 +182,9 @@ body{
     width: 100% ;
     height: 100vh;
     background-color: #fff;
-}
+    position: relative;
+    /* overflow-y: hidden; */
+ } 
 
 .curve-container{
     position: relative;
@@ -205,9 +207,9 @@ body{
 .text-area{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 90%;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
     padding: 0 3vw;
@@ -218,19 +220,17 @@ body{
     font-weight: 500;
     opacity: 0.2;
     letter-spacing: -0.2vw;
-    align-self: flex-start;
 }
 
 .text-area h1:nth-child(2){
-    align-self: flex-end;
+    padding-left: 10vw;
 }
 
 .text-area-hover{
     position: absolute;
-    width: 10% ;
-    height: 100%;
+    height: 90%;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
     padding: 0 3vw;
@@ -243,9 +243,61 @@ body{
     font-weight: 500;
     opacity: 1;
     letter-spacing: -0.2vw;
-    align-self: flex-start;
+    width: 0%;
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
 
 .text-area-hover h1:nth-child(2){
-    align-self: flex-end;
+    padding-left: 10vw;
+    width: 0%;
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
+
+.extra{
+    width: 98%;
+    position: absolute;
+    bottom: 2%;
+    padding-left: 3vw;
+    overflow: hidden;
+}
+
+.extra-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.extra-container h3{
+    color: #a0a0a0;
+}
+
+.extra-btn{
+    width: 9vw;
+    height: 4vw;
+    border-radius: 3vw;
+    margin-right: 1vw;
+    outline: none;
+    border: none;
+    background-color: #e5e2e2;
+    cursor: pointer;
+}
+
+.book-a-demo-btn{
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* .book-a-demo-btn p{ 
+    transition: all  cubic-bezier(0.19, 1, 0.22, 1).7s;
+    height: 10px;
+    overflow: hidden;
+}
+
+.book-a-demo-btn p:nth-child(1):hover { 
+    margin-top: -15px;
+} */
