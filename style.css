@@ -282,8 +282,9 @@ body{
 }
 
 .extra-btn{
-    width: 9vw;
-    height: 4vw;
+    /* width: 9vw;
+    height: 4vw; */
+    padding: 1.2vw 2vw;
     border-radius: 3vw;
     margin-right: 1vw;
     outline: none;
@@ -305,29 +306,17 @@ body{
 
 .hover-btn{
     height: 20px;
-    background-color: red;
     overflow: hidden;
 }
 
 .hover-btn p{
-    
     transition: all  cubic-bezier(0.19, 1, 0.22, 1).7s;
 }
 
-.hover-btn:hover p{
-    margin-top:-15px ;
+.extra-btn:hover p:nth-child(1){
+    margin-top:-20px ;
 }
 
-/* .book-a-demo-btn p{ 
-    transition: all  cubic-bezier(0.19, 1, 0.22, 1).7s;
-    height: 15px;
-    overflow: hidden;
-    background-color: red;
-}
-
-.book-a-demo-btn p:nth-child(1):hover { 
-    margin-top: -15px;
-} */
 
 .brand-container{
     margin-top: 3vw;
