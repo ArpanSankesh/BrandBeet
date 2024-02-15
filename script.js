@@ -15,7 +15,7 @@ var tl =  gsap.timeline({scrollTrigger:{
     trigger:".section-1",
     start:"50%% 50%",
     end:"200% 50%",
-    scrub:true,
+    scrub:2,
     pin:true
 }});
 
@@ -64,7 +64,7 @@ var tl2 =  gsap.timeline({scrollTrigger:{
     trigger:".section-2",
     start:"0% 50%",
     end:"50% 50%",
-    scrub:true
+    scrub:2
 }});
 
 
@@ -76,8 +76,8 @@ tl2.to('.curve-container',{
 var tl3 =  gsap.timeline({scrollTrigger:{
     trigger:".text-area",
     start:"20% 50%",
-    end:"100% 100%",
-    scrub:true
+    end:"150% 100%",
+    scrub:2
 }});
 
 tl3.to('.text-area-hover .h1',{

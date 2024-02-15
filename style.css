@@ -182,7 +182,7 @@ body{
     width: 100% ;
     height: 100vh;
     background-color: #fff;
-    position: relative;
+    /* position: relative; */
     /* overflow-y: hidden; */
  } 
 
@@ -257,9 +257,8 @@ body{
 
 .extra{
     width: 98%;
-    position: absolute;
-    bottom: 4%;
-    padding-left: 3vw;
+    /* height: 10%; */
+    padding-left:3vw;
     overflow: hidden;
 }
 
@@ -271,8 +270,15 @@ body{
     justify-content: space-between;
 }
 
+
 .extra-container h3{
     color: #a0a0a0;
+}
+
+.extra-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .extra-btn{
@@ -284,18 +290,39 @@ body{
     border: none;
     background-color: #e5e2e2;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* overflow: hidden; */
 }
 
 .book-a-demo-btn{
     background-color: #000;
     color: #fff;
+}
+
+
+.hover-btn{
+    height: 20px;
+    background-color: red;
     overflow: hidden;
+}
+
+.hover-btn p{
+    
+    transition: all  cubic-bezier(0.19, 1, 0.22, 1).7s;
+}
+
+.hover-btn:hover p{
+    margin-top:-15px ;
 }
 
 /* .book-a-demo-btn p{ 
     transition: all  cubic-bezier(0.19, 1, 0.22, 1).7s;
-    height: 10px;
+    height: 15px;
     overflow: hidden;
+    background-color: red;
 }
 
 .book-a-demo-btn p:nth-child(1):hover { 
@@ -303,6 +330,7 @@ body{
 } */
 
 .brand-container{
+    margin-top: 3vw;
     width: 100%;
     height: 10vw;
     background-color: #000;
@@ -313,4 +341,9 @@ body{
 
 .brand-container img{
     height: 4vw;
+}
+
+.section-3{
+    width: 100%;
+    height: 100vh;
 }
