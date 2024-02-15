@@ -90,10 +90,9 @@ tl3.to('.text-area-hover .secondH1',{
 var tl4 =  gsap.timeline({scrollTrigger:{
     trigger:".section-3",
     start:"50% 50%",
-    end:"100% 50%",
-    scrub:1,
-    pin:true,
-    markers:true
+    end:"200% 50%",
+    scrub:2,
+    pin:true
 }});
 
 tl4.to('.c1',{
@@ -143,8 +142,10 @@ tl4.to('.c5',{
 },"c6")
 
 
+
 tl4.to('.circle',{
-    marginLeft:"100%"
+    marginLeft:"100%",
+    rotate:360
 },"c6")
 
 var tl5 =  gsap.timeline({scrollTrigger:{
