@@ -386,3 +386,8 @@ body{
     font-size: 1.4vw;
 }
 
+.summary{
+    text-align: center;
+    color: #a0a0a0;
+    opacity: 0;
+}
