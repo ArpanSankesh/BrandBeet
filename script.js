@@ -86,3 +86,26 @@ tl3.to('.text-area-hover .h1',{
 tl3.to('.text-area-hover .secondH1',{
     width:"100%"
 })
+
+// var tl4 =  gsap.timeline({scrollTrigger:{
+//     trigger:".section-3",
+//     start:"50% 50%",
+//     end:"200% 50%",
+//     scrub:1,
+//     pin:true,
+//     markers:true
+// }});
+
+// tl4.to('.c1',{
+//     opacity:1,
+//     marginTop:"-25%"
+// },"c1")
+// tl4.to('.c2',{
+//     opacity:1,
+//     marginTop:"-100%"
+// },"c2")
+// tl4.to('.c1',{
+//     opacity:0,
+// },"c2")
+
+
