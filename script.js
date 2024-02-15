@@ -90,7 +90,7 @@ tl3.to('.text-area-hover .secondH1',{
 var tl4 =  gsap.timeline({scrollTrigger:{
     trigger:".section-3",
     start:"50% 50%",
-    end:"200% 50%",
+    end:"220% 50%",
     scrub:2,
     pin:true
 }});
@@ -148,19 +148,33 @@ tl4.to('.circle',{
     rotate:360
 },"c6")
 
-var tl5 =  gsap.timeline({scrollTrigger:{
-    trigger:".section-3",
-    start:"50% 50%",
-    end:"200% 50%",
-    scrub:1,
+// var tl5 =  gsap.timeline({scrollTrigger:{
+//     trigger:".section-3",
+//     start:"50% 50%",
+//     end:"200% 50%",
+//     scrub:1,
+// }});
+
+// tl5.to('.circle img',{
+//     rotate:'360deg'
+// },"last")
+// tl5.to('.summary',{
+//     y:"-10vw",
+//     opacity:1
+// },"last")
+
+var tl6 =  gsap.timeline({scrollTrigger:{
+    trigger:".text-area-4",
+    start:"20% 50%",
+    end:"150% 100%",
+    scrub:2
 }});
 
-tl5.to('.circle img',{
-    rotate:'360deg'
-},"last")
-tl5.to('.summary',{
-    y:"-10vw",
-    opacity:1
-},"last")
+tl6.to('.text-area-hover-4 .h1',{
+    width:"100%"
+})
+tl6.to('.text-area-hover-4 .secondH1',{
+    width:"100%"
+})
 
 
