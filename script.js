@@ -87,25 +87,59 @@ tl3.to('.text-area-hover .secondH1',{
     width:"100%"
 })
 
-// var tl4 =  gsap.timeline({scrollTrigger:{
-//     trigger:".section-3",
-//     start:"50% 50%",
-//     end:"200% 50%",
-//     scrub:1,
-//     pin:true,
-//     markers:true
-// }});
+var tl4 =  gsap.timeline({scrollTrigger:{
+    trigger:".section-3",
+    start:"50% 50%",
+    end:"200% 50%",
+    scrub:1,
+    pin:true,
+    markers:true
+}});
 
-// tl4.to('.c1',{
-//     opacity:1,
-//     marginTop:"-25%"
-// },"c1")
-// tl4.to('.c2',{
-//     opacity:1,
-//     marginTop:"-100%"
-// },"c2")
-// tl4.to('.c1',{
-//     opacity:0,
-// },"c2")
+tl4.to('.c1',{
+    opacity:1,
+    marginTop:"-30%"
+},"c1")
+
+tl4.to('.c2',{
+    opacity:1,
+},"c2")
+tl4.to('.c1',{
+    opacity:0,
+    marginTop:"-100%"
+},"c2")
+
+tl4.to('.c3',{
+    opacity:1
+},"c3")
+tl4.to('.c2',{
+    opacity:0,
+    marginTop:"-30%"
+},"c3")
+
+tl4.to('.c4',{
+    opacity:1
+},"c4")
+tl4.to('.c3',{
+    opacity:0,
+    marginTop:"-30%"
+},"c4")
+
+
+tl4.to('.c5',{
+    opacity:1
+},"c5")
+tl4.to('.c4',{
+    opacity:0,
+    marginTop:"-30%"
+},"c5")
+
+tl4.to('.c6',{
+    opacity:1
+},"c6")
+tl4.to('.c1',{
+    opacity:0,
+    marginTop:"-100%"
+},"c6")
 
 
